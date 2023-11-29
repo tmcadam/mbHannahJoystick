@@ -19,5 +19,11 @@ basic.forever(function () {
         radio.sendNumber(7)
     } else if (joystickbit.getButton(joystickbit.JoystickBitPin.P15)) {
         radio.sendNumber(8)
+    } else if (input.buttonIsPressed(Button.A)) {
+        radio.sendNumber(9)
+    } else if (input.buttonIsPressed(Button.B)) {
+        radio.sendNumber(10)
+    } else if (input.buttonIsPressed(Button.AB)) {
+        radio.sendNumber(11)
     }
 })
