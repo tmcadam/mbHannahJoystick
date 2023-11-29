@@ -25,5 +25,7 @@ basic.forever(function () {
         radio.sendNumber(10)
     } else if (input.buttonIsPressed(Button.AB)) {
         radio.sendNumber(11)
+    } else {
+        radio.sendNumber(0)
     }
 })
